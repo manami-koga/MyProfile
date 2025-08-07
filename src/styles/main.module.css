@@ -3,7 +3,7 @@
   color: white !important;
 }
 
-.footer{
+.footer {
   background-color: #F4C0C2 !important;
   color: white !important;
   width: 100%;
@@ -21,18 +21,20 @@
   min-height: calc(100vh - 160px);
 }
 
-
 .contentWrapper {
   display: flex;
-  flex-direction: row; /* 横並び */
+  flex-direction: row;
+  /* 横並び */
   align-items: center;
   justify-content: center;
-  gap: 40px; /* 画像とボタンの間隔 */
-  flex-wrap: wrap; /* 画面が狭いときは折り返し */
+  gap: 40px;
+  /* 画像とボタンの間隔 */
+  flex-wrap: wrap;
+  /* 画面が狭いときは折り返し */
   margin: 20px 0;
 }
 
-
+/*トップ画面の写真*/
 .img {
   width: 45%;
   max-width: 450px;
@@ -54,7 +56,8 @@
 
 .btnMalformation {
   font-size: 2rem;
-  padding: 2.5rem 3rem;/*ボタンの横縦幅*/
+  padding: 2.5rem 3rem;
+  /*ボタンの横縦幅*/
   color: #fff;
   border-radius: 100% 80px / 80px 100%;
   background-color: #eb6100;
@@ -67,4 +70,28 @@
 .btnMalformationPastel {
   background: linear-gradient(135deg, #fca1a1 40%, #fcfc5d 100%);
   box-shadow: 30px 10px 0 #fefeb3;
+}
+
+/*プロフィール画像*/
+.profileImage {
+  /*サイズ変更*/
+  width: 200px;
+  height: 200px;
+}
+
+.card {
+  /*囲う線　線なし*/
+  border: solid none;
+  /*角丸*/
+  border-radius: 10px;
+  /*影*/
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /*サイズ*/
+  text-align: center;
+  width: 500px;
+  height: 600px;
+  padding: 24px;
+  margin: 40px auto;
+  /*背景：白*/
+  background-color: white;
 }

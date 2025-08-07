@@ -20,9 +20,9 @@ import styles from "../../styles/main.module.css"
 //遷移先
 const navItems = [
   { text: "ホーム", path: "/Home" },
-  { text: "プロフィール", path: "/user" },
+  { text: "プロフィール", path: "/MyProfile" },
   { text: "ユーザ一覧", path: "/UserList" },
-  { text: "資格一覧", path: "/qualifications" },
+  { text: "資格一覧", path: "/Qualifications" },
 ];
 
 export const Header = () => {
