@@ -12,18 +12,16 @@ const Home = () => {
     const onClickTop = () => {
         route.push("/Top");
     }
-    
+
     //プロフィール画面に遷移
     const onClickMyProfile = () => {
-        route.push("/MyProfile")
+        route.push("/MyProfileScreen")
     }
 
-    //
-    const onClickUserList = () => {
-        route.push("/UserList");
+    //成果物一覧に遷移
+    const onClickProductList = () => {
+        route.push("/ProductList");
     }
-
-
 
     //資格一覧画面に遷移
     const onClickQualifications = () => {
@@ -32,12 +30,11 @@ const Home = () => {
 
     return (
         <>
-            <Header />
-            <h1>ホーム画面です</h1>
+            <Header name="ホーム画面"/>
             <button onClick={onClickMyProfile} className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}>プロフィールへ</button>
             <button onClick={onClickTop} className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}>Top画面に戻る</button>
             <button onClick={onClickQualifications} className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}>資格取得一覧へ</button>
-            <button className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}>成果物一覧</button>
+            <button onClick={onClickProductList} className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}>成果物一覧</button>
             <Footer />
         </>
     )

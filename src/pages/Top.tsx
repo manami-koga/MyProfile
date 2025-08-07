@@ -13,7 +13,7 @@ const Top = () => {
     }
     return (
         <div className={styles.inputTop}>
-            <Header />
+            <Header name="ユーザ紹介サイト" />
             <div className={styles.contentWrapper}>
                 <Image src={IMG_6114} alt="トップ画面の画像" className={styles.img} />
                 <button

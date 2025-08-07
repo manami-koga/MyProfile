@@ -16,16 +16,17 @@ import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
 import { useState } from "react";
 import styles from "../../styles/main.module.css"
+import { TitleType } from "@/types/Title";
 
 //遷移先
 const navItems = [
   { text: "ホーム", path: "/Home" },
   { text: "プロフィール", path: "/MyProfile" },
-  { text: "ユーザ一覧", path: "/UserList" },
+  { text: "成果物一覧", path: "/ProductList" },
   { text: "資格一覧", path: "/Qualifications" },
 ];
 
-export const Header = () => {
+export const Header = (props:TitleType) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer = (open: boolean) => () => {
@@ -37,7 +38,7 @@ export const Header = () => {
       <Container maxWidth="md">
         <Toolbar sx={{ justifyContent: "center", position: "relative" }}>
           <Typography variant="h6" component="div" sx={{ textAlign: "center" }}>
-            ユーザー紹介サイト
+            {props.name}
           </Typography>
 
           {/* ハンバーガーアイコンを右上に配置 */}
