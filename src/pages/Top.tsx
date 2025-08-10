@@ -12,7 +12,7 @@ const Top = () => {
         route.push("/Home");
     }
     return (
-        <>
+        <div className={styles.wrapper}>
             <Header name="ユーザ紹介サイト" />
             <div className={styles.inputTop}>
 
@@ -26,9 +26,10 @@ const Top = () => {
                     </button>
                 </div>
 
-                <Footer />
+               
             </div>
-        </>
+             <Footer />
+        </div>
     )
 }
 

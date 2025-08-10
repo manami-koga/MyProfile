@@ -1,0 +1,29 @@
+.table {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.design08 {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #ffffff;
+    gap: 20px;
+}
+
+.design08 th {
+    padding: 10px;
+    background: #bcc4cd;
+    border: solid 1px #666666;
+    color: #ffffff;
+}
+
+.design08 td {
+    padding: 10px;
+    border: solid 1px #666666;
+}
+
+.design08 td:first-child {
+    background: #e9faf9;
+}
