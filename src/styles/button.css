@@ -1,0 +1,91 @@
+/* styles/global.css */
+
+/* グローバルスタイル */
+* {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 3rem;
+  color: #614f38;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* a.btnの通常時スタイル */
+a.btn {
+  position: relative;
+  text-decoration: none;
+  transition: 0.15s ease-out;
+  -webkit-transform: translateZ(0);
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 3rem;
+  padding: 1.2rem 5rem 1.2rem 3rem;
+  color: inherit;
+  text-align: center;
+  line-height: 1;
+  box-shadow: 0 2px 0 #614f38;
+  background-color: #fff;
+  width: auto;
+  min-width: 120px; /* 最低幅を確保 */
+  white-space: nowrap; /* 改行を防ぐ */
+}
+
+/*メディアクエリ*/
+@media (max-width: 480px) {
+  a.btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    min-width: 120px;
+  }
+}
+
+a.btn:before,
+a.btn:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+a.btn:before {
+  right: 2rem;
+  width: 0.7rem;
+  height: 1px;
+  background: #614f38;
+}
+
+a.btn:after {
+  right: 20px;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #614f38;
+  border-right: 1px solid #614f38;
+  transform: rotate(45deg);
+}
+
+a.btn:hover {
+  color: #fff;
+  background-color: #614f38;
+  transform: translateY(2px);
+  box-shadow: 0 0 0 rgba(245, 209, 0, 0.75);
+  opacity: 1;
+}
+
+a.btn:hover:before {
+  background-color: #fff;
+}
+
+a.btn:hover:after {
+  border-color: #fff;
+}
+
+

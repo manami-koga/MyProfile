@@ -21,7 +21,7 @@ import { TitleType } from "@/types/Title";
 //遷移先
 const navItems = [
   { text: "ホーム", path: "/Home" },
-  { text: "プロフィール", path: "/MyProfile" },
+  { text: "プロフィール", path: "/MyProfileScreen" },
   { text: "成果物一覧", path: "/ProductList" },
   { text: "資格一覧", path: "/Qualifications" },
 ];
@@ -37,7 +37,7 @@ export const Header = (props:TitleType) => {
     <AppBar position="static" component="header" className={styles.header}>
       <Container maxWidth="md">
         <Toolbar sx={{ justifyContent: "center", position: "relative" }}>
-          <Typography variant="h6" component="div" sx={{ textAlign: "center" }}>
+          <Typography variant="h6" component="div" sx={{ textAlign: "center", fontSize:25}}>
             {props.name}
           </Typography>
 
@@ -49,7 +49,7 @@ export const Header = (props:TitleType) => {
             onClick={toggleDrawer(true)}
             sx={{ position: "absolute", right: 0 }}
           >
-            <MenuIcon />
+            <MenuIcon sx={{ fontSize: 32 }} /> {/* ハンバーガーアイコンのサイズ変更 */}
           </IconButton>
         </Toolbar>
 

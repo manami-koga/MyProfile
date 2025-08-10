@@ -30,12 +30,14 @@ const Home = () => {
 
     return (
         <>
+         <div className={styles.wrapper}>
             <Header name="ホーム画面"/>
             <button onClick={onClickMyProfile} className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}>プロフィールへ</button>
             <button onClick={onClickTop} className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}>Top画面に戻る</button>
             <button onClick={onClickQualifications} className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}>資格取得一覧へ</button>
             <button onClick={onClickProductList} className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}>成果物一覧</button>
             <Footer />
+            </div>
         </>
     )
 }

@@ -12,20 +12,23 @@ const Top = () => {
         route.push("/Home");
     }
     return (
-        <div className={styles.inputTop}>
+        <>
             <Header name="ユーザ紹介サイト" />
-            <div className={styles.contentWrapper}>
-                <Image src={IMG_6114} alt="トップ画面の画像" className={styles.img} />
-                <button
-                    onClick={onClick}
-                    className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}
-                >
-                    ホーム画面へ
-                </button>
-            </div>
+            <div className={styles.inputTop}>
 
-            <Footer />
-        </div>
+                <div className={styles.contentWrapper}>
+                    <Image src={IMG_6114} alt="トップ画面の画像" className={styles.img} />
+                    <button
+                        onClick={onClick}
+                        className={`${styles.btn} ${styles.btnMalformation} ${styles.btnMalformationPastel}`}
+                    >
+                        ホーム画面へ
+                    </button>
+                </div>
+
+                <Footer />
+            </div>
+        </>
     )
 }
 
