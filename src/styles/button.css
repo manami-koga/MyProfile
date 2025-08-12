@@ -8,7 +8,7 @@
 html {
   font-size: 62.5%;
   padding: 3rem;
-  color: #614f38;
+  color: #ABBEE0;
 }
 
 body {
@@ -29,7 +29,7 @@ a.btn {
   color: inherit;
   text-align: center;
   line-height: 1;
-  box-shadow: 0 2px 0 #614f38;
+  box-shadow: 0 2px 0 #ABBEE0;
   background-color: #fff;
   width: auto;
   min-width: 120px; /* 最低幅を確保 */
@@ -60,21 +60,21 @@ a.btn:before {
   right: 2rem;
   width: 0.7rem;
   height: 1px;
-  background: #614f38;
+  background: #ABBEE0;
 }
 
 a.btn:after {
   right: 20px;
   width: 6px;
   height: 6px;
-  border-top: 1px solid #614f38;
-  border-right: 1px solid #614f38;
+  border-top: 1px solid #ABBEE0;
+  border-right: 1px solid #ABBEE0;
   transform: rotate(45deg);
 }
 
 a.btn:hover {
   color: #fff;
-  background-color: #614f38;
+  background-color: #ABBEE0;
   transform: translateY(2px);
   box-shadow: 0 0 0 rgba(245, 209, 0, 0.75);
   opacity: 1;

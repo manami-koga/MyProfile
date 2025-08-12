@@ -9,6 +9,9 @@ const QualificationsScreen = (props: TitleType) => {
         <div className={styles.wrapper}>
             <Header name="資格取得一覧 " />
             <Qualifications  />
+            <div className={styles.button}>
+                <a href="/Home" className="btn">ホームに戻る</a>
+            </div>
             <Footer />
         </div>
     )

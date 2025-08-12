@@ -1,6 +1,6 @@
 .table {
     margin-top: 10px;
-    padding: 0 10px;
+    padding: 0 10px 20px;
 }
 
 .design08 {
@@ -14,7 +14,7 @@
 
 .design08 th {
     padding: 10px;
-    background: #bcc4cd;
+    background: #ABBEE0;
     border: solid 1px #666666;
     color: #ffffff;
 }
@@ -25,5 +25,5 @@
 }
 
 .design08 td:first-child {
-    background: #e9faf9;
+    background: #FFECAE;
 }
