@@ -1,8 +1,8 @@
-import styles from "../../styles/main.module.css"
+import frame from "../../styles/frame.module.css"
 
 export const Footer=()=>{
     return(
-      <footer className={styles.footer}>
+      <footer className={frame.footer}>
         <p >
          &copy; 2025 profile site
       </p>

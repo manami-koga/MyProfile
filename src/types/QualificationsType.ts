@@ -1,8 +1,7 @@
-//1行分の型定義
-export type QualificationsType={
-    target: any
-    id:number
-    qualificationsName:string
-    qualificationsDate:Date
-    expirationDate:string
-}
+export type QualificationsType = {
+    id: number;
+    qualificationsName: string;
+    qualificationsDate: string;
+    expirationDate: string;
+    site?: string;
+};

@@ -1,14 +1,18 @@
 import styles from "../../styles/main.module.css"
 import tableStyles from "../../styles/table.module.css"
+import searchStyle from "../../styles/search.module.css"
+import buttonStyle from "../../styles/buttonStyles.module.css"
 import { QualificationsList } from "./QualificationsList";
 import { ChangePage } from "@/types/ChangePage";
 
 
 import { useState } from "react";
+import { ChangeSite } from "@/hooks/changeSite";
 
 //初期値：4行表示
 const Qualifications: React.FC<ChangePage> = ({ rowsPerPage = 4 }) => {
 
+    const { onClickSite } = ChangeSite();
     //資格情報の保持
     const [qualifications, setQualifications] = useState(QualificationsList);
 
@@ -65,26 +69,28 @@ const Qualifications: React.FC<ChangePage> = ({ rowsPerPage = 4 }) => {
         setCurrentPage((prev) => Math.min(prev + 1, totalPages))
     }
 
+
+
     return (
         <>
-            <div className={styles.searchContainer}>
-                <div className={styles.keywordSearch}>
+            <div className={searchStyle.searchContainer}>
+                <div className={searchStyle.keywordSearch}>
                     <label >キーワード検索：</label>
-                    <input type="text" value={inputValue} onChange={handleInputChange} className={styles.text} />
+                    <input type="text" value={inputValue} onChange={handleInputChange} className={searchStyle.textSearch} />
                 </div>
 
-                <div className={styles.search}>
+                <div className={searchStyle.search}>
                     <label>絞り込み条件</label>
-                    
-                    <div className={styles.getDate}>
+
+                    {/* <div className={searchStyle.getDate}>
                         <label>取得日</label>
                         <input type="date"
-                            onChange={handleDateFilterChange} className={styles.text} />
-                    </div>
+                            onChange={handleDateFilterChange} className={searchStyle.text} />
+                    </div> */}
 
-                    <div className={styles.getDate}>
+                    <div className={searchStyle.getDate}>
                         <label>有効期限の有無</label>
-                        <select name="deadline" required className={styles.text}>
+                        <select name="deadline" required className={searchStyle.text}>
                             <option value="">選択してください</option>
                             <option value="なし">なし</option>
                             <option value="あり">あり</option>
@@ -100,6 +106,7 @@ const Qualifications: React.FC<ChangePage> = ({ rowsPerPage = 4 }) => {
                             <th>資格名</th>
                             <th>取得日</th>
                             <th>有効期限</th>
+                            <th>公式サイトへ</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -118,12 +125,22 @@ const Qualifications: React.FC<ChangePage> = ({ rowsPerPage = 4 }) => {
                                     <td>{Item.name}</td>
                                     <td>{Item.date}</td>
                                     <td>{Item.expirationDate}</td>
+                                    <td>
+                                        {Item.site ? (
+                                            <button onClick={() => onClickSite(Item.site)}>
+                                                公式サイトへ
+                                            </button>
+                                        ) : (
+                                            <span style={{ color: "#888" }}>なし</span>
+                                        )}
+                                    </td>
+
                                 </tr>
                             ))
                         }
                     </tbody>
                 </table>
-                <div className={styles.pagesButton}>
+                <div className={buttonStyle.pagesButton}>
                     <div>
                         <button onClick={onClickBack} disabled={currentPage === 1}>前へ</button>
                     </div>

@@ -15,15 +15,15 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
 import { useState } from "react";
-import styles from "../../styles/main.module.css"
 import { TitleType } from "@/types/Title";
+import frame from "../../styles/frame.module.css"
 
 //遷移先
 const navItems = [
   { text: "ホーム", path: "/Home" },
   { text: "プロフィール", path: "/MyProfileScreen" },
   { text: "成果物一覧", path: "/ProductList" },
-  { text: "資格一覧", path: "/Qualifications" },
+  { text: "資格一覧", path: "/QualificationsScreen" },
 ];
 
 export const Header = (props:TitleType) => {
@@ -34,7 +34,7 @@ export const Header = (props:TitleType) => {
   };
 
   return (
-    <AppBar position="static" component="header" className={styles.header}>
+    <AppBar position="static" component="header" className={frame.header}>
       <Container maxWidth="md">
         <Toolbar sx={{ justifyContent: "center", position: "relative" }}>
           <Typography variant="h6" component="div" sx={{ textAlign: "center", fontSize:25}}>

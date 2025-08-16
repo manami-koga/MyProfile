@@ -1,0 +1,18 @@
+.header {
+  background-color: #F4C0C2 !important;
+  color: white !important;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #F4C0C2 !important;
+  color: white !important;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+
+}

@@ -1,0 +1,60 @@
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.keywordSearch {
+  flex: 1;
+  min-width: 300px;
+  font-size: 20px;
+}
+
+.textSearch {
+  border-radius: 8px;
+  height: 30px;
+  padding: 5px;
+  width: 200px;
+}
+
+.search {
+  font-size: 20px;
+  width: 400px;              /* 横幅を固定 */
+  margin-left: auto;         /* 右端に寄せる */
+  box-sizing: border-box;
+}
+
+.getDate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.text {
+  border-radius: 8px;
+  height: 40px;
+  padding: 5px;
+  width: 80%;               /* 親の幅に合わせて広げる */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .keywordSearch {
+    width: 100%;
+  }
+}
