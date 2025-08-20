@@ -22,7 +22,7 @@ import frame from "../../styles/frame.module.css"
 const navItems = [
   { text: "ホーム", path: "/Home" },
   { text: "プロフィール", path: "/MyProfileScreen" },
-  { text: "成果物一覧", path: "/ProductList" },
+  { text: "成果物一覧", path: "/ProductListScreen" },
   { text: "資格一覧", path: "/QualificationsScreen" },
 ];
 

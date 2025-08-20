@@ -1,0 +1,23 @@
+export const DeliverableList=[
+    {
+        id:1,
+        DeliverableList:"ユーザーリスト",
+        CreationDate:"2025/08/04",
+        Status:"完成",
+        information:"https://github.com/manami-koga/user_list"
+    },
+    {
+        id:2,
+        DeliverableList:"プロフィールカード",
+        CreationDate:"2025/08/04",
+        Status:"完成",
+        information:"https://github.com/manami-koga/ProfileCard"
+    },
+    {
+        id:3,
+        DeliverableList:"プロフィール",
+        CreationDate:"2025/08/20",
+        Status:"未完成",
+        information:"https://github.com/manami-koga/ProfileCard"
+    },
+]

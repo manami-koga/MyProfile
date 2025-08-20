@@ -1,17 +1,16 @@
-import { useRoutes } from "react-router-dom"
 import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
-import { useRouter } from "next/router"
+import Product from "./components/Product"
 
-const ProductList = () => {
+const ProductListScreen = () => {
    
     return (
         <>
             <Header name="成果物一覧"/>
-            
+            <Product/>
             <Footer />
         </>
     )
 }
 
-export default ProductList;
+export default ProductListScreen;

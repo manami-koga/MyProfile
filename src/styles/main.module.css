@@ -40,3 +40,27 @@ body {
   border-radius: 10px;
   display: block;
 }
+
+.icon8{
+  background-color: transparent;
+  border-radius: 90%;
+  border: solid none;
+  width: 30px;
+  height: 30px;
+}
+
+.icon8:hover{
+    background-color: #b2eeda;
+    cursor: pointer;
+}
+
+.icon{
+  border-radius: 70%;
+  background-color: transparent;
+  border:none;
+}
+
+.noIcon:hover{
+ background-color: #f1c4c4; 
+ cursor: not-allowed;
+}

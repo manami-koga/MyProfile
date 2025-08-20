@@ -26,14 +26,12 @@ export const Hamburger = () => {
         <List>
           {['Home', 'Profile', 'Settings'].map((text) => (
             <ListItemButton onClick={handleDrawerClose} sx={{ textAlign: "center", borderBottom: "solid 1px" }}>
-             <ListItemText primary={<MenuIcon />}></ListItemText>
+             <ListItemText primary={<MenuIcon />}/>
           </ListItemButton>
 
           ))}
         </List>
       </Drawer>
     </>
-
-
     )
 }

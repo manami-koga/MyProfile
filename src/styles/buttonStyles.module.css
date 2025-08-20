@@ -1,4 +1,3 @@
-
 .btn {
   font-size: 1.6rem;
   font-weight: 700;
@@ -40,4 +39,52 @@
   align-items: center;
   gap: 20px;
   margin-top: 20px;
+}
+
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: auto auto 20px;
+}
+.Pagination_Item_Link {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: #fff;
+  border: solid 2px #458f76;
+  font-size: 14px;
+  color: #458f76;
+  font-weight: bold;
+  transition: all 0.15s linear;
+}
+.Pagination_Item_Link_Icon {
+  width: 20px;
+}
+.Pagination_Item_Link.isActive {
+  background: #458f76;
+  color: #fff;
+  pointer-events: none;
+}
+.Pagination_Item_Link:not(.isActive):hover {
+  background: #458f76;
+  color: #fff;
+}
+.Pagination > * + * {
+  margin-left: 8px;
+}
+
+.iconLarge{
+  width: 20%;
+  height: 100px;
+}
+
+.btnFontSize {
+  font-size: 20px;
 }
