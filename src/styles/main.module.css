@@ -64,3 +64,9 @@ body {
  background-color: #f1c4c4; 
  cursor: not-allowed;
 }
+
+.text{
+  text-align: center;
+  padding: 100px;
+  color: #323131;
+}
