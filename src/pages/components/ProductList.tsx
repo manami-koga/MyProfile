@@ -13,7 +13,7 @@ const ProductList = () => {
                             <p>成果物名：{Item.DeliverableList}</p>
                             <p>作成日：{Item.CreationDate}</p>
                             <p>ステータス：{Item.Status}</p>
-                            <button onClick={() => onClickSite(Item.information)}>詳細</button>{/**名前を考える */}
+                            <button  className="btn btn-secondary" onClick={() => onClickSite(Item.information)}>詳細</button>{/**名前を考える */}
                         </div>
                     )
                 })

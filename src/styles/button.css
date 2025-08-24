@@ -16,7 +16,7 @@ body {
 }
 
 /* a.btnの通常時スタイル */
-a.btn {
+.btn {
   position: relative;
   text-decoration: none;
   transition: 0.15s ease-out;
@@ -38,15 +38,15 @@ a.btn {
 
 /*メディアクエリ*/
 @media (max-width: 480px) {
-  a.btn {
+  .btn {
     font-size: 1.4rem;
     padding: 1rem 2rem;
     min-width: 120px;
   }
 }
 
-a.btn:before,
-a.btn:after {
+.btn:before,
+.btn:after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -56,14 +56,14 @@ a.btn:after {
   vertical-align: middle;
 }
 
-a.btn:before {
+.btn:before {
   right: 2rem;
   width: 0.7rem;
   height: 1px;
   background: #ABBEE0;
 }
 
-a.btn:after {
+.btn:after {
   right: 20px;
   width: 6px;
   height: 6px;
@@ -72,19 +72,23 @@ a.btn:after {
   transform: rotate(45deg);
 }
 
-a.btn:hover {
+.btn:hover {
   color: #fff;
   background-color: #ABBEE0;
   transform: translateY(2px);
   box-shadow: 0 0 0 rgba(245, 209, 0, 0.75);
   opacity: 1;
+  cursor: pointer;
 }
 
-a.btn:hover:before {
+.btn:hover:before {
   background-color: #fff;
 }
 
-a.btn:hover:after {
+.btn:hover:after {
   border-color: #fff;
 }
 
+.btn-secondary{
+margin-top: 20px;
+}
