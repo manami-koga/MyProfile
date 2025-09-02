@@ -23,14 +23,14 @@ const MyProfile = (props: ProfileType) => {
                 <div className={styles.field}>
                     <label className={profile.label}>好きなこと</label>
                     <div className={profile.content}>
-                        {Array.isArray(interest) ? interest.join(",") : interest}
+                        {Array.isArray(interest) ? interest.join(" , ") : interest}
                     </div>
                 </div>
 
                 <div className={styles.field}>
                     <label className={profile.label}>苦手なこと</label>
                     <div className={profile.content}>
-                        {Array.isArray(weakPoint) ? weakPoint.join(",") : weakPoint}
+                        {Array.isArray(weakPoint) ? weakPoint.join(" , ") : weakPoint}
                     </div>
                 </div>
             </div>

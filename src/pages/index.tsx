@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import Top from "./Top";
+import Login from "./Login";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
     <>
-     <Top/>
+     <Login/>
     </>
   );
 }

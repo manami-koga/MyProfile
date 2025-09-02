@@ -7,7 +7,7 @@ const Home = () => {
     
     return (
         <div className={styles.wrapper}>
-            <Header name="ホーム画面" />
+            <Header name="ホーム" />
             <HomeContent />
             <Footer />
         </div>
