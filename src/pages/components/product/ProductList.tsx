@@ -1,5 +1,5 @@
-import { DeliverableList } from "./DeliverableList";
-import profileStyles from "../../styles/profile.module.css"
+import profileStyles from "../../components/myProfile/profile.module.css"
+import { DeliverableList } from "../deliverable/DeliverableList";
 import { useChangeSite } from "@/hooks/useChangeSite";
 
 const ProductList = () => {

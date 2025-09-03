@@ -1,4 +1,4 @@
-import HomeButton from "./HomeButton";
+import HomeButton from "../HomeButton";
 import ProductList from "./ProductList"
 
 const Product = () => {
