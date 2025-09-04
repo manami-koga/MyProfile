@@ -1,6 +1,6 @@
-import image0 from "../../../../public/Images/image0.png"
+import image0 from "../../../public/Images/image0.png"
 import Image from "next/image"
-import styles from "../../../styles/main.module.css"
+import styles from "../../styles/main.module.css"
 import profile from "../myProfile/profile.module.css"
 import { ProfileType } from "@/components/myProfile/ProfileType";
 

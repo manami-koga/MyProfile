@@ -1,10 +1,10 @@
 import Image from "next/image"
-import ProfileImg from "../../../../public/Images/top.png"
-import studyImg from "../../../../public/Images/study.png"
-import product from "../../../../public/Images/Product.png"
-import frendsImg from "../../../../public/Images/friend_Illustration_0.png"
-import profile from "../../components/myProfile/profile.module.css"
-import styles from "../../../styles/main.module.css"
+import ProfileImg from "../../../public/Images/top.png"
+import studyImg from "../../../public/Images/study.png"
+import product from "../../../public/Images/Product.png"
+import frendsImg from "../../../public/Images/friend_Illustration_0.png"
+import profile from "../myProfile/profile.module.css"
+import styles from "../../styles/main.module.css"
 import { usePageNavigation } from "@/hooks/usePageNavigation"
 
 export const HomeContent = () => {

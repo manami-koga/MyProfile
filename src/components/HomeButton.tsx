@@ -1,10 +1,10 @@
-import buttonStyles from "../../styles/buttonStyles.module.css"
+import buttonStyles from "../styles/buttonStyles.module.css"
 import Link from 'next/link';
 
 const HomeButton = () => {
     return (
         <div className={buttonStyles.button}>
-            <Link href="/Home/">Home</Link>
+          <a href="/Home" className="btn">ホームに戻る</a>
         </div>
     )
 }

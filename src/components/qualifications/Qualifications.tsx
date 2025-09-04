@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Image from "next/image";
-import icon01 from "../../../../public/Images/icon01.png";
+import icon01 from "../../../public/Images/icon01.png";
 import tableStyles from "../qualifications/styles/table.module.css";
 import searchStyle from "../qualifications/styles/search.module.css";
-import styles from "../../../styles/main.module.css";
-import buttonStyle from "../../../styles/buttonStyles.module.css";
+import styles from "../../styles/main.module.css";
+import buttonStyle from "../../styles/buttonStyles.module.css";
 import { useChangeSite } from "@/hooks/useChangeSite";
 import { QualificationsList } from "./QualificationsList";
 
