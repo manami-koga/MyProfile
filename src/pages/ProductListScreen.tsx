@@ -1,6 +1,6 @@
-import { Footer } from "./components/Footer"
-import { Header } from "./components/Header"
-import Product from "./components/product/Product"
+import { Footer } from "../components/Footer"
+import { Header } from "../components/Header"
+import Product from "../components/product/Product"
 
 const ProductListScreen = () => {
     return (
