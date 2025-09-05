@@ -28,6 +28,8 @@ const Login = () => {
             src="/Images/221027_mobilephone2.png"
             alt="ロード画像"
             className={styles.loadingImg}
+            width={300}
+            height={300}
           />
           <p>読み込み中...</p>
         </div>

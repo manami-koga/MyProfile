@@ -15,6 +15,8 @@ export const HomeContent = () => {
             className={profile.profileImage}
             src="/Images/friend_Illustration_0.png"
             alt="最初の画像"
+            width={200}
+            height={200}
           />
         </div>
         <h1>ようこそ！</h1>
@@ -30,6 +32,8 @@ export const HomeContent = () => {
             className={profile.profileImage}
             src="/Images/top.png"
             alt="プロフィール画像"
+            width={200}
+            height={200}
           />
           <div className={profile.stars}>
             <span>★</span>
@@ -57,6 +61,8 @@ export const HomeContent = () => {
             className={profile.profileImage}
             src="/Images/study.png"
             alt="資格取得一覧へ遷移するアイコン"
+            width={200}
+            height={200}
           />
           <div className={profile.stars}>
             <span>★</span>
@@ -82,6 +88,8 @@ export const HomeContent = () => {
             className={profile.profileImage}
             src="/Images/Product.png"
             alt="成果物一覧へ遷移するアイコン"
+            width={200}
+            height={200}
           />
           <div className={profile.stars}>
             <span>★</span>

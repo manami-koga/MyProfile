@@ -13,6 +13,8 @@ const MyProfile = (props: ProfileType) => {
           src="/Images/image0.png"
           alt="プロフィール画像"
           className={profile.profileImage}
+          width={200}
+          height={200}
         />
         <h1 className={profile.name}> {name}</h1>
 

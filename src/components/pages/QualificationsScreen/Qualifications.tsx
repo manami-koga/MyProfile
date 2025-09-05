@@ -179,6 +179,8 @@ const Qualifications: React.FC = () => {
                           src="/Images/icon01.png"
                           alt="HPへのアイコン"
                           className={styles.icon8}
+                          width={24}
+                          height={24}
                         />
                       </button>
                     ) : (
