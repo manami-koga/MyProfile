@@ -6,14 +6,15 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
-  Toolbar,
-  Typography,
+  // Toolbar,
+  // Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
-import { useHamburgerIcon } from "@/hooks/useHamburgerIcon";
+import { useHamburgerIcon } from "@/components/hooks/useHamburgerIcon";
 import Image from "next/image";
+import React from "react";
 
 export const HamburgerIcon = () => {
   const { drawerOpen, toggleDrawer, navItems } = useHamburgerIcon();
@@ -27,7 +28,8 @@ export const HamburgerIcon = () => {
         onClick={toggleDrawer(true)}
         sx={{ position: "absolute", right: 0 }}
       >
-        <MenuIcon sx={{ fontSize: 40 }} /> {/* ハンバーガーアイコンのサイズ変更 */}
+        <MenuIcon sx={{ fontSize: 40 }} />{" "}
+        {/* ハンバーガーアイコンのサイズ変更 */}
       </IconButton>
 
       {/* Drawerメニュー */}
@@ -43,9 +45,15 @@ export const HamburgerIcon = () => {
                   component={Link}
                   href={item.path}
                   onClick={toggleDrawer(false)}
-                  sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-                   <Image src={item.icon} alt="メニューアイコン" width={24} height={24} />
-                  <ListItemText primary={item.text}/>
+                  sx={{ display: "flex", alignItems: "center", gap: 2 }}
+                >
+                  <Image
+                    src={item.icon}
+                    alt="メニューアイコン"
+                    width={24}
+                    height={24}
+                  />
+                  <ListItemText primary={item.text} />
                 </ListItemButton>
               </ListItem>
             ))}
@@ -53,5 +61,5 @@ export const HamburgerIcon = () => {
         </Box>
       </Drawer>
     </>
-  )
-}
+  );
+};
