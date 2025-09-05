@@ -1,5 +1,4 @@
 import buttonStyles from "../styles/buttonStyles.module.css"
-import Link from 'next/link';
 
 const HomeButton = () => {
     return (
