@@ -1,7 +1,7 @@
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import { HomeContent } from "../components/home/HomeContent";
 import styles from "../styles/main.module.css"
-import { HomeContent } from "./components/HomeContent";
 
 const Home = () => {
     
@@ -11,7 +11,6 @@ const Home = () => {
             <HomeContent />
             <Footer />
         </div>
-
     )
 }
 

@@ -1,3 +1,6 @@
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import Image from "next/image";
 import {
   Box,
   Drawer,
@@ -6,16 +9,11 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
-  Toolbar,
-  Typography,
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
 import { useHamburgerIcon } from "@/hooks/useHamburgerIcon";
-import Image from "next/image";
 
-export const HamburgerIcon = () => {
+const HamburgerIcon = () => {
   const { drawerOpen, toggleDrawer, navItems } = useHamburgerIcon();
   return (
     <>
@@ -55,3 +53,4 @@ export const HamburgerIcon = () => {
     </>
   )
 }
+export default HamburgerIcon;

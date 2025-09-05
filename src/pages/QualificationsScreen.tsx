@@ -1,10 +1,9 @@
 import { TitleType } from "@/types/Title"
 import styles from "../styles/main.module.css"
-import buttonStyles from "../styles/buttonStyles.module.css"
-import { Header } from "./components/Header"
-import { Footer } from "./components/Footer"
-import Qualifications from "./components/Qualifications"
-import HomeButton from "./components/HomeButton"
+import { Header } from "../components/Header"
+import { Footer } from "../components/Footer"
+import Qualifications from "../components/qualifications/Qualifications"
+import HomeButton from "../components/HomeButton"
 
 const QualificationsScreen = (props: TitleType) => {
     return (

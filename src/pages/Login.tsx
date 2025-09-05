@@ -4,13 +4,12 @@ import loadingImg from "../../public/Images/221027_mobilephone2.png"
 import styles from "../styles/main.module.css"
 import buttonStyles from "../styles/buttonStyles.module.css"
 import { useRouter } from "next/router"
-import { Header } from "./components/Header"
-import { Footer } from "./components/Footer"
+import { Header } from "../components/Header"
+import { Footer } from "../components/Footer"
 import { useState } from "react"
 
 const Login = () => {
     const route = useRouter();
-
     const [loading, setLoading] = useState(false);
 
     //画面遷移
@@ -20,7 +19,6 @@ const Login = () => {
             setLoading(false); // 5秒後に非表示
             route.push("/Home");
         }, 4000);
-
     }
 
     return (
@@ -47,7 +45,6 @@ const Login = () => {
                     <Footer />
                 </>
             }
-
         </div>
     )
 }

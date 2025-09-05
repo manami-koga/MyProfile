@@ -1,9 +1,8 @@
-import { Footer } from "./components/Footer"
-import { Header } from "./components/Header"
-import MyProfile from "./components/MyProfile"
+import { Footer } from "../components/Footer"
+import { Header } from "../components/Header"
+import MyProfile from "../components/myProfile/MyProfile"
 import styles from "../styles/main.module.css"
-import buttonStyles from "../styles/buttonStyles.module.css"
-import HomeButton from "./components/HomeButton"
+import HomeButton from "../components/HomeButton"
 
 const MyProfileScreen = () => {
     return (
