@@ -1,4 +1,3 @@
-import image0 from "../../../public/Images/image0.png";
 import Image from "next/image";
 import styles from "../../../styles/main.module.css";
 import profile from "../../../styles/profile.module.css";
@@ -11,7 +10,7 @@ const MyProfile = (props: ProfileType) => {
     <div className={profile.profileWrapper}>
       <div className={profile.card}>
         <Image
-          src={image0}
+          src="/Images/image0.png"
           alt="プロフィール画像"
           className={profile.profileImage}
         />

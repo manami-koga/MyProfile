@@ -1,9 +1,8 @@
 import { AppBar, Container, Toolbar, Typography } from "@mui/material";
 import { TitleType } from "@/types/Title";
 // import { useHamburgerIcon } from "@/hooks/useHamburgerIcon";
-import frame from "../../../styles/frame.module.css";
+import frame from "../../styles/frame.module.css";
 import Image from "next/image";
-import icon from "../../../public/Images/トナカイアイコン6 (1).png";
 import React from "react";
 import { HamburgerIcon } from "./Hamburger";
 
@@ -16,7 +15,7 @@ export const Header = (props: TitleType) => {
           <Toolbar sx={{ justifyContent: "center", position: "relative" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <Image
-                src={icon}
+                src="/Images/トナカイアイコン6 (1).png"
                 alt="桜アイコン"
                 width={45}
                 height={45}

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Image from "next/image";
-import icon01 from "../../../public/Images/icon01.png";
 import tableStyles from "../../../styles/table.module.css";
 import searchStyle from "../../../styles/search.module.css";
 import styles from "../../../styles/main.module.css";
@@ -177,7 +176,7 @@ const Qualifications: React.FC = () => {
                         className={styles.icon}
                       >
                         <Image
-                          src={icon01}
+                          src="/Images/icon01.png"
                           alt="HPへのアイコン"
                           className={styles.icon8}
                         />

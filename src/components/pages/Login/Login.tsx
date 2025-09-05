@@ -1,6 +1,4 @@
 import Image from "next/image";
-import IMG_6114 from "../../public/Images/IMG_6114.png";
-import loadingImg from "../../public/Images/221027_mobilephone2.png";
 import styles from "../../../styles/main.module.css";
 import buttonStyles from "../../../styles/buttonStyles.module.css";
 import { useRouter } from "next/router";
@@ -27,7 +25,7 @@ const Login = () => {
       {loading ? (
         <div className={styles.loadingImgDiv}>
           <Image
-            src={loadingImg}
+            src="/Images/221027_mobilephone2.png"
             alt="ロード画像"
             className={styles.loadingImg}
           />
@@ -39,7 +37,7 @@ const Login = () => {
           <div className={styles.inputTop}>
             <div className={styles.contentWrapper}>
               <Image
-                src={IMG_6114}
+                src="/Images/IMG_6114.png"
                 alt="トップ画面の画像"
                 className={styles.img}
               />

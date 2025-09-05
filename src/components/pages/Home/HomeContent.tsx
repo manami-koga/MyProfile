@@ -1,12 +1,7 @@
 import Image from "next/image";
-import ProfileImg from "../../../public/Images/top.png";
 import { usePageNavigation } from "@/components/hooks/usePageNavigation";
 import profile from "../../../styles/profile.module.css";
-import studyImg from "../../../public/Images/study.png";
 import styles from "../../../styles/main.module.css";
-// import top from "../../public/Images/top.png"
-import product from "../../../public/Images/Product.png";
-import frendsImg from "../../../public/Images/friend_Illustration_0.png";
 import React from "react";
 
 export const HomeContent = () => {
@@ -18,7 +13,7 @@ export const HomeContent = () => {
         <div className={styles.fuwafuwa}>
           <Image
             className={profile.profileImage}
-            src={frendsImg}
+            src="/Images/friend_Illustration_0.png"
             alt="最初の画像"
           />
         </div>
@@ -33,7 +28,7 @@ export const HomeContent = () => {
         <div className={profile.heartWrapper}>
           <Image
             className={profile.profileImage}
-            src={ProfileImg}
+            src="/Images/top.png"
             alt="プロフィール画像"
           />
           <div className={profile.stars}>
@@ -60,7 +55,7 @@ export const HomeContent = () => {
         <div className={profile.heartWrapper}>
           <Image
             className={profile.profileImage}
-            src={studyImg}
+            src="/Images/study.png"
             alt="資格取得一覧へ遷移するアイコン"
           />
           <div className={profile.stars}>
@@ -85,7 +80,7 @@ export const HomeContent = () => {
         <div className={profile.heartWrapper}>
           <Image
             className={profile.profileImage}
-            src={product}
+            src="/Images/Product.png"
             alt="成果物一覧へ遷移するアイコン"
           />
           <div className={profile.stars}>
