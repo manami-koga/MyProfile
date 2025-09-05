@@ -7,7 +7,6 @@
 
 html {
   font-size: 62.5%;
-  padding: 3rem;
   color: #fff;
 }
 
@@ -29,7 +28,7 @@ body {
   color: 2px #fff;
   text-align: center;
   line-height: 1;
-  box-shadow: 0 2px 0 #ABBEE0;
+  box-shadow: 0 2px 0 #abbee0;
   background: #fff;
   width: auto;
   min-width: 120px; /* 最低幅を確保 */
@@ -60,21 +59,21 @@ body {
   right: 2rem;
   width: 0.7rem;
   height: 1px;
-  background: #ABBEE0;
+  background: #abbee0;
 }
 
 .btn:after {
   right: 20px;
   width: 6px;
   height: 6px;
-  border-top: 1px solid #ABBEE0;
-  border-right: 1px solid #ABBEE0;
+  border-top: 1px solid #abbee0;
+  border-right: 1px solid #abbee0;
   transform: rotate(45deg);
 }
 
 .btn:hover {
   color: #fff;
-  background-color: #ABBEE0;
+  background-color: #abbee0;
   transform: translateY(2px);
   box-shadow: 0 0 0 rgba(245, 209, 0, 0.75);
   opacity: 1;
@@ -89,14 +88,14 @@ body {
   border-color: #fff;
 }
 
-.btn-secondary{
-margin-top: 20px;
+.btn-secondary {
+  margin-top: 20px;
 }
 
-.btn-home{
+.btn-home {
   color: #5c4a3d;
-  font-weight:450;
+  font-weight: 450;
   border: none;
   box-shadow: 5px 5px 0 #fefeb3;
-  background: linear-gradient(135deg, #fca1a1,#f9f993);
+  background: linear-gradient(135deg, #fca1a1, #f9f993);
 }
