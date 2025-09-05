@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "../../../styles/main.module.css";
-import profile from "../../../styles/profile.module.css";
+import styles from "@/styles/main.module.css";
+import profile from "@/styles/profile.module.css";
 import { ProfileType } from "@/types/ProfileType";
 
 const MyProfile = (props: ProfileType) => {

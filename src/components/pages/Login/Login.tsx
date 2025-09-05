@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "../../../styles/main.module.css";
-import buttonStyles from "../../../styles/buttonStyles.module.css";
+import styles from "@/styles/main.module.css";
+import buttonStyles from "@/styles/buttonStyles.module.css";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { Header } from "@/components/parts/Header";

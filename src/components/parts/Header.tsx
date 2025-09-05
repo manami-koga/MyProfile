@@ -1,7 +1,7 @@
 import { AppBar, Container, Toolbar, Typography } from "@mui/material";
 import { TitleType } from "@/types/Title";
 // import { useHamburgerIcon } from "@/hooks/useHamburgerIcon";
-import frame from "../../styles/frame.module.css";
+import frame from "@/styles/frame.module.css";
 import Image from "next/image";
 import React from "react";
 import { HamburgerIcon } from "./Hamburger";

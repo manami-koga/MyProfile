@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Image from "next/image";
-import tableStyles from "../../../styles/table.module.css";
-import searchStyle from "../../../styles/search.module.css";
-import styles from "../../../styles/main.module.css";
-import buttonStyle from "../../../styles/buttonStyles.module.css";
+import tableStyles from "@/styles/table.module.css";
+import searchStyle from "@/styles/search.module.css";
+import styles from "@/styles/main.module.css";
+import buttonStyle from "@/styles/buttonStyles.module.css";
 import { QualificationsList } from "../../libs/QualificationsList";
 import { useChangeSite } from "@/components/hooks/useChangeSite";
 

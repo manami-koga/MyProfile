@@ -1,5 +1,5 @@
 import React from "react";
-import frame from "../../styles/frame.module.css";
+import frame from "@/styles/frame.module.css";
 
 export const Footer = () => {
   return (

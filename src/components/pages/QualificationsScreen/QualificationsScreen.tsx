@@ -1,6 +1,6 @@
 // import { TitleType } from "@/types/Title";
 import HomeButton from "@/components/parts/HomeButton";
-import styles from "../../../styles/main.module.css";
+import styles from "@/styles/main.module.css";
 // import buttonStyles from "../styles/buttonStyles.module.css"
 import Qualifications from "./Qualifications";
 import { Header } from "@/components/parts/Header";

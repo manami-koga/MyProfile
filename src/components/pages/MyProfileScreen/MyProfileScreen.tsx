@@ -1,5 +1,5 @@
 import { Header } from "@/components/parts/Header";
-import styles from "../../../styles/main.module.css";
+import styles from "@/styles/main.module.css";
 import MyProfile from "./MyProfile";
 import HomeButton from "@/components/parts/HomeButton";
 import { Footer } from "@/components/parts/Footer";

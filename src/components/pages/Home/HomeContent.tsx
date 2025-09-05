@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { usePageNavigation } from "@/components/hooks/usePageNavigation";
-import profile from "../../../styles/profile.module.css";
-import styles from "../../../styles/main.module.css";
+import profile from "@/styles/profile.module.css";
+import styles from "@/styles/main.module.css";
 import React from "react";
 
 export const HomeContent = () => {
