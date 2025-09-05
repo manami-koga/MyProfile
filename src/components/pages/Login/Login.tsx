@@ -40,6 +40,8 @@ const Login = () => {
                 src="/Images/IMG_6114.png"
                 alt="トップ画面の画像"
                 className={styles.img}
+                width={300}
+                height={300}
               />
               <button
                 onClick={onClick}
