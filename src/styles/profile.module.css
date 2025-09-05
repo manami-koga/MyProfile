@@ -1,8 +1,8 @@
-html, body {
+/* html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-}
+} */
 
 .profileWrapper {
   display: flex;
@@ -12,7 +12,7 @@ html, body {
 }
 
 .card {
-  background: rgba(255,255 , 255, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   max-width: 500px;
@@ -52,7 +52,7 @@ html, body {
   margin-left: 60px;
 }
 
-.homeCard{
+.homeCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +68,7 @@ html, body {
   margin: 40px auto;
   box-shadow: 0 4px 12px rgba(240, 199, 110, 0.3);
   text-align: center;
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   color: #5c4a3d;
 }
 
