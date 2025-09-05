@@ -12,8 +12,9 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
-import { useHamburgerIcon } from "@/hooks/useHamburgerIcon";
+import { useHamburgerIcon } from "@/components/hooks/useHamburgerIcon";
 import Image from "next/image";
+import React from "react";
 
 export const HamburgerIcon = () => {
   const { drawerOpen, toggleDrawer, navItems } = useHamburgerIcon();

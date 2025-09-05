@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import icon01 from "../../../public/Images/icon01.png";
-import tableStyles from "../../styles/table.module.css";
-import searchStyle from "../../styles/search.module.css";
-import styles from "../../styles/main.module.css";
-import buttonStyle from "../../styles/buttonStyles.module.css";
-import { QualificationsList } from "./QualificationsList";
-import { useChangeSite } from "@/hooks/useChangeSite";
+import tableStyles from "../../../styles/table.module.css";
+import searchStyle from "../../../styles/search.module.css";
+import styles from "../../../styles/main.module.css";
+import buttonStyle from "../../../styles/buttonStyles.module.css";
+import { QualificationsList } from "../../libs/QualificationsList";
+import { useChangeSite } from "@/components/hooks/useChangeSite";
 
 //初期値：4行表示
 const rowsPerPage = 4;

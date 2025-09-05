@@ -1,12 +1,13 @@
 import Image from "next/image";
 import ProfileImg from "../../../public/Images/top.png";
-import { usePageNavigation } from "@/hooks/usePageNavigation";
-import profile from "../../styles/profile.module.css";
+import { usePageNavigation } from "@/components/hooks/usePageNavigation";
+import profile from "../../../styles/profile.module.css";
 import studyImg from "../../../public/Images/study.png";
-import styles from "../../styles/main.module.css";
+import styles from "../../../styles/main.module.css";
 // import top from "../../public/Images/top.png"
 import product from "../../../public/Images/Product.png";
 import frendsImg from "../../../public/Images/friend_Illustration_0.png";
+import React from "react";
 
 export const HomeContent = () => {
   const { onClickMyProfile, onClickProductList, onClickQualifications } =
