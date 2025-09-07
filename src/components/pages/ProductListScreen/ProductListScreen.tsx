@@ -1,6 +1,6 @@
-import { Footer } from "./components/Footer"
-import { Header } from "./components/Header"
-import Product from "./components/Product"
+import { Header } from "@/components/parts/Header";
+import { Footer } from "@/components/parts/Footer";
+import Product from "./Product";
 
 const ProductListScreen = () => {
    
@@ -10,7 +10,7 @@ const ProductListScreen = () => {
             <Product/>
             <Footer />
         </>
-    )
-}
+    );
+};
 
 export default ProductListScreen;

@@ -1,5 +1,5 @@
-import HomeButton from "./HomeButton";
-import ProductList from "./ProductList"
+import HomeButton from "@/components/parts/HomeButton";
+import ProductList from "./ProductList";
 
 const Product = () => {
     return (
@@ -7,8 +7,7 @@ const Product = () => {
             <ProductList />
             <HomeButton/>
         </>
-    )
-
-}
+    );
+};
 
 export default Product;
