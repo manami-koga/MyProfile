@@ -16,8 +16,8 @@ export const DeliverableList = [
     {
         id: 3,
         DeliverableList: "プロフィール",
-        CreationDate: "2025/08/20",
-        Status: "未完成",
+        CreationDate: "2025/09/08",
+        Status: "完成",
         information: "https://github.com/manami-koga/ProfileCard",
     },
 ];
